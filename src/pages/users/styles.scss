@@ -1,0 +1,30 @@
+$starlight: #f0e5d2;
+$importantMargin: 5px!important;
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  @include flexCenter;
+}
+
+.container__item {
+  @include flexCenter;
+  min-width: 300px;
+  min-height: 160px;
+  text-align: center;
+  margin: $importantMargin;
+  border: 1px solid $starlight;
+  flex-direction: column!important;
+}
+
+.container__textWrapper {
+  @include flexCenter;
+  align-items: center;
+}
+
+.container__button {
+  margin: $importantMargin;
+}
